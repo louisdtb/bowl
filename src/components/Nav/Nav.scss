@@ -1,0 +1,27 @@
+.nav {
+  background-color: #f3f7ed;
+
+  grid-column: 1 / span 4;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__logo {
+    margin-top: 2rem;
+    width: 17.5rem;
+  }
+
+  &__items {
+    margin-top: 13rem;
+    font-size: 2.4rem;
+    font-family: "dm sans", sans-serif;
+  }
+  &__item {
+    margin-bottom: 3.6rem;
+    & a {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+}

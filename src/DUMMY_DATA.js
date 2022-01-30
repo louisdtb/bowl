@@ -1,0 +1,66 @@
+export const DUMMY_DATA = [
+  {
+    id: "p1",
+    name: "Laksa",
+    price: 9.99,
+    description: "Singaporean spicy noodles in a vegetable broth",
+    image: require("./resources/tinified/meal-1.jpeg"),
+  },
+  {
+    id: "p2",
+    name: "Coconut curry",
+    price: 9.99,
+    description: "Coconut curried in a tamarind and onion paste",
+    image: require("./resources/tinified/meal-2.jpeg"),
+  },
+  {
+    id: "p3",
+    name: "Pad thai",
+    price: 4.99,
+    description:
+      "Soaked dried rice noodles stir-fried with eggs and chopped tofu",
+    image: require("./resources/tinified/meal-3.jpeg"),
+  },
+  {
+    id: "p4",
+    name: "Fried rice",
+    price: 7.99,
+    description: "Egg and stir fried seitan over a bed of rice",
+    image: require("./resources/tinified/meal-4.jpeg"),
+  },
+  {
+    id: "p5",
+    name: "Coconut soup",
+    price: 9.99,
+    description: "Tangy lemongrass in a creamy coconut soup ",
+    image: require("./resources/tinified/meal-5.jpeg"),
+  },
+  {
+    id: "p6",
+    name: "Spicy noodles",
+    price: 8.99,
+    description: "Noodles fried with a garlic chili sauce",
+    image: require("./resources/tinified/meal-6.jpeg"),
+  },
+  {
+    id: "p7",
+    name: "Ka pow jae",
+    price: 9.99,
+    description: "Vegetable medley with carrots, onions, and thai vegtables",
+    image: require("./resources/tinified/meal-7.jpeg"),
+  },
+  {
+    id: "p8",
+    name: "Red curry",
+    price: 9.99,
+    description: "Tamarind, onion, and tomato curry with tofu",
+    image: require("./resources/tinified/meal-8.jpeg"),
+  },
+  {
+    id: "p9",
+    name: "Papaya salad",
+    price: 9.99,
+    description: "Papaya tossed with chopped vegetable, garlic and tofu",
+    image: require("./resources/tinified/meal-9.jpeg"),
+  },
+];

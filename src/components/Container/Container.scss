@@ -1,0 +1,12 @@
+.container {
+  // width: 120rem;
+  min-height: 50rem;
+  margin: 4rem 8rem;
+  background-color: white;
+  border-radius: 2rem;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: repeat(22, 1fr);
+  grid-column-gap: 2vw;
+}
