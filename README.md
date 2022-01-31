@@ -31,4 +31,4 @@ List of things to fix or add
 
 ## License
 
-Copyright (c) 2022 Louis de Tilly.
+Copyright (c) Louis de Tilly.
