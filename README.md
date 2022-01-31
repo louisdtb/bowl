@@ -9,6 +9,7 @@ This repo is for showcasing purposes only.
 - Redux cart management
 - Lottie order success animation
 - CSS-only responsive popout cart
+- Background video on desktop
 
 ## Todo
 
