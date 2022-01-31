@@ -1,27 +1,97 @@
 .nav {
-  background-color: #f3f7ed;
-
-  grid-column: 1 / span 4;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  background-color: #f3f7ed;
+
+  grid-column: 1 / span 4;
+
   &__logo {
-    margin-top: 2rem;
-    width: 17.5rem;
+    background-image: url("../../resources/bowl-logo.png");
+    margin-top: 2.4rem;
+    width: 12.5vw;
+    max-width: 85%;
+    height: 4vw;
+    background-repeat: no-repeat;
+    background-origin: center;
+    background-size: contain;
   }
 
   &__items {
-    margin-top: 13rem;
-    font-size: 2.4rem;
+    margin-top: 6.4rem;
+    font-size: 2rem;
     font-family: "dm sans", sans-serif;
+    position: relative;
   }
   &__item {
-    margin-bottom: 3.6rem;
+    margin-bottom: 2.4rem;
     & a {
       color: #000;
       text-decoration: none;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    & > * {
+      margin-right: 1.6rem;
+    }
+  }
+
+  //MEDIA QUERIES
+
+  @media only screen and (max-width: 68.75em) {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    padding: 1.6rem 2vw;
+
+    &__logo {
+      margin-top: 0;
+      margin-right: 2.4rem;
+      width: 15vw;
+      height: 4.5vw;
+    }
+
+    &__items {
+      margin-top: 0;
+      display: flex;
+      font-size: 1.8rem;
+    }
+
+    &__item {
+      margin-bottom: 0;
+      margin-right: 2rem;
+    }
+
+    &__link {
+      & > * {
+        margin-right: 4px;
+      }
+    }
+
+    &__icon {
+      height: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 26.57em) {
+    &__link {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &__logo {
+      background-image: url("../../resources/bowl-logo--mobile.png");
+      width: 10vw;
+      height: 10vw;
+      margin-right: 2.4rem;
     }
   }
 }

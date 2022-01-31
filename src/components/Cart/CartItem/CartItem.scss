@@ -25,6 +25,9 @@
 
   &__ui {
     font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__number {
@@ -35,6 +38,22 @@
     border-radius: 50%;
     width: 1.6rem;
     height: 1.6rem;
-    background-color: #abcf81;
+    background-color: var(--light-green);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 43.75em) {
+    &__name {
+      font-size: 2rem;
+    }
+    &__price {
+      font-size: 1.8rem;
+    }
+    &__number {
+      font-size: 1.8rem;
+    }
   }
 }
