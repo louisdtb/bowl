@@ -2,7 +2,7 @@
 
 Bowl is a fictional food order menu designed and built by Louis de Tilly. The goal was to create a modern and well-designed digital menu prototype.
 
-This repo is for viewing purposes only.
+This repo is for showcasing purposes only.
 
 ## Features
 
