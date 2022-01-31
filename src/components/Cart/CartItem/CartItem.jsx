@@ -7,7 +7,6 @@ import { UilPlus } from "@iconscout/react-unicons";
 import { UilMinus } from "@iconscout/react-unicons";
 
 const CartItem = (props) => {
-  console.log(props);
   const { id, name, quantity, total, price } = props.item;
   const existingItem = DUMMY_DATA.find((item) => item.id === id);
   const dispatch = useDispatch();

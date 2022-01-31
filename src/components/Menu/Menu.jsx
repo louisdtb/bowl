@@ -1,7 +1,6 @@
 import React from "react";
 import "./Menu.scss";
 import MenuItem from "./MenuItem/MenuItem";
-import img from "../../resources/meal-1.jpeg";
 import { DUMMY_DATA } from "../../DUMMY_DATA";
 
 const Menu = () => {

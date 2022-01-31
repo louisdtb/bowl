@@ -1,18 +1,11 @@
 import React from "react";
 import "./Nav.scss";
 import { UilMapMarker, UilListUl, UilSearch } from "@iconscout/react-unicons";
-// import { ReactComponent as Logo } from "../../resources/bowl.svg";
 
 const Nav = () => {
   return (
     <div className="nav">
-      {/* <img
-        src={require("../../resources/bowl-logo.png")}
-        alt="logo"
-        className="nav__logo"
-      /> */}
       <div className="nav__logo">&nbsp;</div>
-      {/* <Logo /> */}
       <ul className="nav__items">
         <li className="nav__item">
           <a href="#" className="nav__link">

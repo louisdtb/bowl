@@ -12,7 +12,6 @@ const Cart = () => {
   const [success, setSuccess] = useState(false);
   const items = useSelector((state) => state.cart.items);
   const totalPrice = useSelector((state) => state.cart.totalPrice);
-  console.log(items);
 
   const dispatch = useDispatch();
 

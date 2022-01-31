@@ -141,11 +141,9 @@
     z-index: 10;
     width: 40rem;
     height: 100%;
-    // opacity: 0;
     right: 0;
     transform: translateX(100%);
     transition: 0.2s transform ease-in-out;
-    // transition: 0.2s opacity ease-in-out;
 
     &__button {
       display: block;

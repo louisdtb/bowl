@@ -12,9 +12,7 @@ const MenuItem = (props) => {
 
   const { name, price, id, desc, image } = props;
   const items = useSelector((state) => state.cart.items);
-  console.log(items);
   const existingItem = items.find((item) => item.itemId === id);
-  console.log(existingItem);
 
   const dispatch = useDispatch();
 
