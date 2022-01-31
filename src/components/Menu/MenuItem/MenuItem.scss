@@ -87,4 +87,10 @@
     align-items: center;
     justify-content: center;
   }
+
+  @media only screen and (max-width: 43.75em) {
+    &__icon {
+      width: 2rem;
+    }
+  }
 }
