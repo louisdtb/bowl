@@ -2,8 +2,12 @@
   background-color: #7ca57b;
   color: #fff;
   grid-column: -7/ -1;
-  padding: 0 2vw;
-  padding-top: 2.4rem;
+  position: relative;
+
+  &__content {
+    padding: 0 2vw;
+    padding-top: 2.4rem;
+  }
 
   &__heading {
     width: 100%;
@@ -33,6 +37,18 @@
     & > * {
       margin-bottom: 2.4rem;
     }
+  }
+
+  &__success {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2000;
+    background-color: rgba(#000, 0.2);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   //HAMBURGER
@@ -113,8 +129,11 @@
   }
 
   @media only screen and (max-width: 68.75em) {
-    padding-top: 3.2rem;
     grid-column: -8/ -1;
+
+    &__content {
+      padding-top: 3.2rem;
+    }
   }
 
   @media only screen and (max-width: 43.75em) {
@@ -134,6 +153,11 @@
 
     &__hamburger {
       display: block;
+    }
+
+    &__content {
+      padding: 0 5vw;
+      padding-top: 1.6rem;
     }
   }
 
