@@ -46,9 +46,9 @@ const MenuItem = (props) => {
         }}
       >
         {liked ? (
-          <UilHeart size="24" color="#DB1846" />
+          <UilHeart size="24" color="#DB1846" className="menu-item__icon" />
         ) : (
-          <UilHeart size="24" />
+          <UilHeart size="24" className="menu-item__icon" />
         )}
       </div>
       <div className="menu-item__content">
