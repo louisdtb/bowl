@@ -18,7 +18,7 @@ export const DUMMY_DATA = [
     name: "Pad thai",
     price: 4.99,
     description:
-      "Soaked dried rice noodles stir-fried with eggs and chopped tofu",
+      "Rice noodles stir-fried with eggs and chopped tofu",
     image: require("./resources/tinified/meal-3.jpeg"),
   },
   {
