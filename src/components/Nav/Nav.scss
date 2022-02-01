@@ -85,6 +85,10 @@
       flex-direction: column;
     }
 
+    &__item {
+      padding-top: 4px;
+    }
+
     &__item:not(:last-child) {
       margin-right: 2rem;
     }

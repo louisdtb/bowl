@@ -137,6 +137,10 @@
     &__content {
       padding-top: 3.2rem;
     }
+
+    &__placeholder {
+      font-size: 1.8rem;
+    }
   }
 
   @media only screen and (max-width: 43.75em) {
@@ -210,10 +214,14 @@
 
   @media only screen and (max-width: 43.75em) {
     &__input {
-      padding: 0 1.6rem;
+      padding: 0.4rem 1.6rem;
     }
     &__button {
       padding: 1.6rem;
+    }
+
+    &__input {
+      font-size: 1.6rem;
     }
   }
 }
