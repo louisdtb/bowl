@@ -16,7 +16,7 @@
 
   &__name {
     margin-bottom: 0.8rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   &__price {
@@ -24,7 +24,7 @@
   }
 
   &__ui {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,8 +36,8 @@
 
   &__button {
     border-radius: 50%;
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 1.8rem;
+    height: 1.8rem;
     background-color: var(--light-green);
 
     display: flex;
@@ -54,6 +54,11 @@
     }
     &__number {
       font-size: 1.8rem;
+    }
+
+    &__button {
+      width: 2.4rem;
+      height: 2.4rem;
     }
   }
 }

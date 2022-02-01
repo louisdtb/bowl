@@ -38,11 +38,11 @@ const CartItem = (props) => {
       </div>
       <div className="cart-item__ui">
         <button className="cart-item__button" onClick={itemDecreaseHandler}>
-          <UilMinus size="12" color="#000" />
+          <UilMinus size="14" color="#000" />
         </button>
         <span className="menu-item__number">{quantity}</span>
         <button className="cart-item__button" onClick={itemIncreaseHandler}>
-          <UilPlus size="12" color="#000" />
+          <UilPlus size="14" color="#000" />
         </button>
       </div>
     </div>

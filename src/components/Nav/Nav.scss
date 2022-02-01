@@ -50,9 +50,11 @@
 
     &__logo {
       margin-top: 0;
-      margin-right: 2.4rem;
+      margin-right: 2vw;
       width: 15vw;
+      min-width: 13rem;
       height: 4.5vw;
+      min-height: 4rem;
     }
 
     &__items {
@@ -63,7 +65,7 @@
 
     &__item {
       margin-bottom: 0;
-      margin-right: 2rem;
+      margin-right: 2vw;
     }
 
     &__link {
@@ -77,7 +79,7 @@
     }
   }
 
-  @media only screen and (max-width: 26.57em) {
+  @media only screen and (max-width: 33em) {
     &__link {
       display: flex;
       flex-direction: column;
@@ -90,8 +92,10 @@
     &__logo {
       background-image: url("../../resources/bowl-logo--mobile.png");
       width: 10vw;
+      min-width: 0;
       height: 10vw;
-      margin-right: 2.4rem;
+      min-height: 0;
+      margin-right: 2rem;
     }
   }
 }

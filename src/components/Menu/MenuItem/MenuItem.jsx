@@ -58,13 +58,13 @@ const MenuItem = (props) => {
           <span className="menu-item__price">${price}</span>
           <div className="menu-item__ui">
             <button className="menu-item__button" onClick={itemDecreaseHandler}>
-              <UilMinus size="12" color="#ffffff" />
+              <UilMinus size="14" color="#ffffff" />
             </button>
             <span className="menu-item__number">
               {existingItem ? existingItem.quantity : 0}
             </span>
             <button className="menu-item__button" onClick={itemIncreaseHandler}>
-              <UilPlus size="12" color="#ffffff" />
+              <UilPlus size="14" color="#ffffff" />
             </button>
           </div>
         </div>
