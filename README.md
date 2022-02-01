@@ -23,16 +23,16 @@ List of things to fix or add
 
 ## Release History
 
-- 0.9
-  - Initial commit
-- 1.0
-  - Restructured design for consistency
-  - Added form success animation
-  - Improved responsiveness
 - 1.0.5
   - Improved mobile layout and accessibility
   - Added mobile cart quantity badge
   - Fixed some spacing issues
+- 1.0
+  - Restructured design for consistency
+  - Added form success animation
+  - Improved responsiveness
+- 0.9
+  - Initial commit
 
 ## License
 
