@@ -18,7 +18,7 @@ List of things to fix or add
 - [x] Improve README.md
 - [ ] Add form validation
 - [ ] Optimize images with webp format
-- [ ] Optimize menu items with useCallback()
+- [ ] Optimize menu items
 - [ ] Add more animations
 
 ## Release History
@@ -29,6 +29,10 @@ List of things to fix or add
   - Restructured design for consistency
   - Added form success animation
   - Improved responsiveness
+- 1.0.5
+  - Improved mobile layout and accessibility
+  - Added mobile cart quantity badge
+  - Fixed some spacing issues
 
 ## License
 
