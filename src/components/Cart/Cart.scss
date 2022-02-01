@@ -69,6 +69,22 @@
     padding: 2rem 0;
 
     z-index: 2000;
+
+    &-number {
+      display: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      z-index: 2001;
+      transform: translate(-50%, -25%);
+
+      color: #fff;
+      border-radius: 50%;
+      width: 1.6rem;
+      height: 1.6rem;
+      background-color: var(--dark-green);
+    }
   }
 
   &__hamburger {
@@ -124,6 +140,10 @@
     background-color: #fff;
   }
 
+  &__checkbox:checked + &__button &__button-number {
+    display: none;
+  }
+
   //FUNCTIONALITY
 
   &__checkbox:checked ~ .cart {
@@ -154,6 +174,10 @@
 
     &__button {
       display: block;
+
+      &-number {
+        display: inline-flex;
+      }
     }
 
     &__hamburger {
@@ -163,6 +187,10 @@
     &__content {
       padding: 0 5vw;
       padding-top: 1.6rem;
+    }
+
+    &__success {
+      height: 100vh;
     }
   }
 

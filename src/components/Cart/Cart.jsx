@@ -11,6 +11,7 @@ import { cartActions } from "../../store/cart-slice";
 const Cart = () => {
   const [success, setSuccess] = useState(false);
   const items = useSelector((state) => state.cart.items);
+  const quantity = useSelector((state) => state.cart.totalQuantity);
   const totalPrice = useSelector((state) => state.cart.totalPrice);
 
   const dispatch = useDispatch();
@@ -43,6 +44,9 @@ const Cart = () => {
       <input type="checkbox" className="cart__checkbox" id="cart-toggle" />
 
       <label for="cart-toggle" className="cart__button">
+        {quantity !== 0 && (
+          <span className="cart__button-number">{quantity}</span>
+        )}
         <span className="cart__hamburger">&nbsp;</span>
       </label>
       <div className="cart">
