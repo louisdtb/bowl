@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./MenuItem.scss";
 import { cartActions } from "../../../store/cart-slice";
 import { useDispatch } from "react-redux";
@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 import { UilHeart } from "@iconscout/react-unicons";
 import { UilPlus } from "@iconscout/react-unicons";
 import { UilMinus } from "@iconscout/react-unicons";
+import { gsap } from "gsap";
 
 const MenuItem = (props) => {
   const [liked, setLiked] = useState(false);
@@ -16,7 +17,11 @@ const MenuItem = (props) => {
 
   const dispatch = useDispatch();
 
+  const plusRef = useRef();
+  const minusRef = useRef();
+
   const itemDecreaseHandler = () => {
+    gsap.from(minusRef.current, { scale: 0.9, ease: "back.out" });
     dispatch(
       cartActions.removeItemFromCart({
         id,
@@ -25,6 +30,7 @@ const MenuItem = (props) => {
   };
 
   const itemIncreaseHandler = () => {
+    gsap.from(plusRef.current, { scale: 0.9, ease: "back.out" });
     dispatch(
       cartActions.addItemToCart({
         id,
@@ -32,6 +38,12 @@ const MenuItem = (props) => {
         name,
       })
     );
+  };
+
+  // ANIMATIONS
+
+  const buttonAnimate = ({ currentTarget }) => {
+    gsap.from(currentTarget, { scale: 0.9, ease: "back.out" });
   };
 
   return (
@@ -43,11 +55,12 @@ const MenuItem = (props) => {
           setLiked(!liked);
         }}
       >
-        {liked ? (
-          <UilHeart size="24" color="#DB1846" className="menu-item__icon" />
-        ) : (
-          <UilHeart size="24" className="menu-item__icon" />
-        )}
+        <UilHeart
+          size="24"
+          color={liked ? "#DB1846" : ""}
+          className="menu-item__icon"
+          onClick={buttonAnimate}
+        />
       </div>
       <div className="menu-item__content">
         <span>
@@ -57,13 +70,21 @@ const MenuItem = (props) => {
         <div className="menu-item__order">
           <span className="menu-item__price">${price}</span>
           <div className="menu-item__ui">
-            <button className="menu-item__button" onClick={itemDecreaseHandler}>
+            <button
+              className="menu-item__button"
+              onClick={itemDecreaseHandler}
+              ref={minusRef}
+            >
               <UilMinus size="14" color="#ffffff" />
             </button>
             <span className="menu-item__number">
               {existingItem ? existingItem.quantity : 0}
             </span>
-            <button className="menu-item__button" onClick={itemIncreaseHandler}>
+            <button
+              className="menu-item__button"
+              onClick={itemIncreaseHandler}
+              ref={plusRef}
+            >
               <UilPlus size="14" color="#ffffff" />
             </button>
           </div>

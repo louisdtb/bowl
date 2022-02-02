@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useLayoutEffect } from "react";
 import "./Cart.scss";
 import CartItem from "./CartItem/CartItem";
 import { useSelector } from "react-redux";
@@ -7,12 +7,27 @@ import Lottie from "react-lottie";
 import animationData from "../../resources/success-lottie.json";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../store/cart-slice";
+import { gsap } from "gsap";
 
 const Cart = () => {
   const [success, setSuccess] = useState(false);
   const items = useSelector((state) => state.cart.items);
   const quantity = useSelector((state) => state.cart.totalQuantity);
   const totalPrice = useSelector((state) => state.cart.totalPrice);
+
+  const placeholderRef = useRef();
+
+  useLayoutEffect(() => {
+    const animation1 = gsap.from(placeholderRef.current, {
+      scale: 0.9,
+      opacity: 0,
+      ease: "back.out",
+    });
+
+    return () => {
+      animation1.kill();
+    };
+  }, [quantity]);
 
   const dispatch = useDispatch();
 
@@ -75,7 +90,7 @@ const Cart = () => {
                 </>
               ))
             ) : (
-              <div className="cart__placeholder">
+              <div className="cart__placeholder" ref={placeholderRef}>
                 <Bowl />
                 Looks like your bowl is empty.
               </div>
