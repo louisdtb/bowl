@@ -50,6 +50,12 @@ const Cart = () => {
         dispatch(cartActions.fulfillOrder());
         setSuccess(false);
       }, 1500);
+    } else if (!address.current.value && items.length !== 0) {
+      alert("Please enter an address.");
+    } else if (address.current.value && items.length === 0) {
+      alert("Please add an item to the cart.");
+    } else if (!address.current.value && items.length === 0) {
+      alert("Please add an item to the cart and add an address.");
     }
   };
 
@@ -108,7 +114,9 @@ const Cart = () => {
             ) : (
               <div className="cart__placeholder" ref={placeholderRef}>
                 <Bowl />
-                Looks like your bowl is empty.
+                <span className="cart__placeholder-text">
+                  Looks like your bowl is empty.
+                </span>
               </div>
             )}
           </div>
