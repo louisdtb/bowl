@@ -13,7 +13,6 @@ const CartItem = (props) => {
   const dispatch = useDispatch();
 
   const cartRef = useRef();
-
   const plusRef = useRef();
   const minusRef = useRef();
 
@@ -31,12 +30,26 @@ const CartItem = (props) => {
 
   const itemDecreaseHandler = () => {
     gsap.from(minusRef.current, { scale: 0.9, ease: "back.out" });
-    dispatch(
-      cartActions.removeItemFromCart({
-        id,
-      })
-    );
-    // }
+    if (quantity === 1) {
+      gsap.to(cartRef.current, {
+        duration: 0.2,
+        scale: 0.9,
+        opacity: 0,
+        ease: "back.in",
+        onComplete: () =>
+          dispatch(
+            cartActions.removeItemFromCart({
+              id,
+            })
+          ),
+      });
+    } else {
+      dispatch(
+        cartActions.removeItemFromCart({
+          id,
+        })
+      );
+    }
   };
 
   const itemIncreaseHandler = () => {
