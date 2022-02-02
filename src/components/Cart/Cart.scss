@@ -216,6 +216,11 @@
     height: 4rem;
     padding: 0 0.8rem;
     margin-bottom: 1.6rem;
+
+    &:focus {
+      transition: all 0.2s ease-in-out;
+      outline-color: var(--dark-green);
+    }
   }
 
   &__button {
