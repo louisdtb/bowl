@@ -16,6 +16,7 @@ const Cart = () => {
   const totalPrice = useSelector((state) => state.cart.totalPrice);
 
   const placeholderRef = useRef();
+  const itemsRef = useRef();
 
   useLayoutEffect(() => {
     const animation1 = gsap.from(placeholderRef.current, {
@@ -23,9 +24,15 @@ const Cart = () => {
       opacity: 0,
       ease: "back.out",
     });
+    const animation2 = gsap.from(itemsRef.current, {
+      scale: 0.5,
+      opacity: 0,
+      ease: "back.out",
+    });
 
     return () => {
       animation1.kill();
+      animation2.kill();
     };
   }, [quantity]);
 
@@ -60,7 +67,9 @@ const Cart = () => {
 
       <label for="cart-toggle" className="cart__button">
         {quantity !== 0 && (
-          <span className="cart__button-number">{quantity}</span>
+          <span className="cart__button-number" ref={itemsRef}>
+            {quantity}
+          </span>
         )}
         <span className="cart__hamburger">&nbsp;</span>
       </label>
