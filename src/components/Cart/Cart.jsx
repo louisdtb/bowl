@@ -10,14 +10,19 @@ import { cartActions } from "../../store/cart-slice";
 import { gsap } from "gsap";
 
 const Cart = () => {
+  // STATE MANAGEMENT
   const [success, setSuccess] = useState(false);
   const items = useSelector((state) => state.cart.items);
   const quantity = useSelector((state) => state.cart.totalQuantity);
   const totalPrice = useSelector((state) => state.cart.totalPrice);
+  const dispatch = useDispatch();
 
+  // REFS
+  const address = useRef();
   const placeholderRef = useRef();
   const badgeRef = useRef();
 
+  // FUNCTIONS
   useLayoutEffect(() => {
     const animation1 = gsap.from(placeholderRef.current, {
       scale: 0.9,
@@ -36,10 +41,6 @@ const Cart = () => {
     };
   }, [quantity]);
 
-  const dispatch = useDispatch();
-
-  const address = useRef();
-
   const submitHandler = (e) => {
     e.preventDefault();
     if (address.current.value && items.length !== 0) {
@@ -49,9 +50,21 @@ const Cart = () => {
         dispatch(cartActions.fulfillOrder());
         setSuccess(false);
       }, 1500);
+    } else if (!address.current.value && items.length !== 0) {
+      alert("Please enter an address.");
+    } else if (address.current.value && items.length === 0) {
+      alert("Please add an item to cart.");
+    } else if (!address.current.value && items.length === 0) {
+      alert("Please add an item to cart and a valid address.");
     }
   };
 
+  // ANIMATIONS
+  const buttonAnimate = ({ currentTarget }) => {
+    gsap.from(currentTarget, { scale: 0.8, ease: "back.out" });
+  };
+
+  // LOTTIE SETTINGS
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -117,7 +130,11 @@ const Cart = () => {
                 placeholder="e.g. 123 Sesame Street, New York NY 11215"
                 ref={address}
               />
-              <button className="form__button btn" type="submit">
+              <button
+                className="form__button btn"
+                type="submit"
+                onClick={buttonAnimate}
+              >
                 <span>Order now</span>{" "}
                 <span>
                   ${items.length !== 0 ? totalPrice.toFixed(2) : "0.00"}
