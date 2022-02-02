@@ -83,7 +83,9 @@ const Cart = () => {
       <div className="cart">
         {success && (
           <div className="cart__success">
-            <Lottie options={defaultOptions} width={200} height={200} />
+            <div className="cart__success-animation">
+              <Lottie options={defaultOptions} width={200} height={200} />
+            </div>
           </div>
         )}
         <div className="cart__content">

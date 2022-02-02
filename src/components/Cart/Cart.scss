@@ -190,7 +190,9 @@
     }
 
     &__success {
-      height: 100vh;
+      &-animation {
+        height: 100vh;
+      }
     }
   }
 
