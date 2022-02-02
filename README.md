@@ -23,6 +23,8 @@ List of things to fix or add
 
 ## Release History
 
+- 1.1.2
+  - Improved cart animations
 - 1.1
   - Added basic animations
   - Improved cart responsiveness on tablet size
