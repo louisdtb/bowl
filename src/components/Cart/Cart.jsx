@@ -50,12 +50,6 @@ const Cart = () => {
         dispatch(cartActions.fulfillOrder());
         setSuccess(false);
       }, 1500);
-    } else if (!address.current.value && items.length !== 0) {
-      alert("Please enter an address.");
-    } else if (address.current.value && items.length === 0) {
-      alert("Please add an item to cart.");
-    } else if (!address.current.value && items.length === 0) {
-      alert("Please add an item to cart and a valid address.");
     }
   };
 
