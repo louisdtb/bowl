@@ -23,6 +23,9 @@ List of things to fix or add
 
 ## Release History
 
+- 1.1
+  - Added basic animations
+  - Improved cart responsiveness on tablet size
 - 1.0.5
   - Improved mobile layout and accessibility
   - Added mobile cart quantity badge
