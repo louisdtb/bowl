@@ -23,6 +23,8 @@ List of things to fix or add
 
 ## Release History
 
+- 1.1.3
+  - Improved mobile success animation
 - 1.1.2
   - Improved cart animations
 - 1.1
