@@ -108,7 +108,9 @@ const Cart = () => {
             ) : (
               <div className="cart__placeholder" ref={placeholderRef}>
                 <Bowl />
-                Looks like your bowl is empty.
+                <span className="cart__placeholder-text">
+                  Looks like your bowl is empty.
+                </span>
               </div>
             )}
           </div>
