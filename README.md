@@ -25,6 +25,14 @@ List of things to fix or add
 
 ## Release History
 
+- 1.1.5
+  - Added image loading spinners
+  - Created reusable color shade system
+  - Added Github badge component
+  - Updated background colors
+  - Improved mobile responsiveness
+  - Tweaked spacing
+  - Added hover states to nav items
 - 1.1.4
   - Fixed some security vulnerabilities
 - 1.1.3
