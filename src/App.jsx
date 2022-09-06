@@ -2,6 +2,7 @@ import React from "react";
 import "./App.scss";
 import "./scss/index.scss";
 import Container from "./components/Container/Container";
+import GithubBadge from "./components/GithubBadge/GithubBadge";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
 
       <div className="app">
         <Container />
+      </div>
+      <div className="app_github-badge">
+        <GithubBadge />
       </div>
     </div>
   );
