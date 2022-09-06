@@ -97,6 +97,10 @@
       flex-direction: column;
     }
 
+    &__items {
+      display: none;
+    }
+
     &__item {
       padding-top: 4px;
     }
@@ -105,17 +109,5 @@
       margin-right: 2rem;
     }
 
-    &__logo {
-      display: none;
-
-      &--mobile {
-        display: block;
-        width: 10vw;
-        min-width: 0;
-        height: 10vw;
-        min-height: 0;
-        margin-right: 2rem;
-      }
-    }
   }
 }
