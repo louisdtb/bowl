@@ -1,5 +1,5 @@
 .cart {
-  background-color: #7ca57b;
+  background-color: var(--green-600);
   color: #fff;
   grid-column: -7/ -1;
   position: relative;
@@ -13,11 +13,13 @@
     width: 100%;
     margin-bottom: 3.2rem;
   }
+
   &__items {
     display: grid;
     grid-row-gap: 0.8rem;
     margin-bottom: 4.8rem;
   }
+
   &__divider {
     height: 1px;
     background-color: #fff;
@@ -34,7 +36,7 @@
     align-items: center;
     text-align: center;
 
-    & > * {
+    &>* {
       margin-bottom: 2.4rem;
     }
   }
@@ -112,6 +114,7 @@
     &::before {
       top: -0.8rem;
     }
+
     &::after {
       top: 0.8rem;
     }
@@ -120,33 +123,34 @@
   &__button:hover &__hamburger::before {
     top: -1rem;
   }
+
   &__button:hover &__hamburger::after {
     top: 1rem;
   }
 
-  &__checkbox:checked + &__button &__hamburger {
+  &__checkbox:checked+&__button &__hamburger {
     background-color: transparent;
   }
 
-  &__checkbox:checked + &__button &__hamburger::before {
+  &__checkbox:checked+&__button &__hamburger::before {
     top: 0;
     transform: rotate(135deg);
     background-color: #fff;
   }
 
-  &__checkbox:checked + &__button &__hamburger::after {
+  &__checkbox:checked+&__button &__hamburger::after {
     top: 0;
     transform: rotate(-135deg);
     background-color: #fff;
   }
 
-  &__checkbox:checked + &__button &__button-number {
+  &__checkbox:checked+&__button &__button-number {
     display: none;
   }
 
   //FUNCTIONALITY
 
-  &__checkbox:checked ~ .cart {
+  &__checkbox:checked~.cart {
     transform: translateX(0);
     opacity: 1;
   }
@@ -218,6 +222,7 @@
     height: 4rem;
     padding: 0 0.8rem;
     margin-bottom: 1.6rem;
+    border-radius: 6px;
 
     &:focus {
       transition: all 0.2s ease-in-out;
@@ -251,6 +256,7 @@
     &__input {
       padding: 0.4rem 1.6rem;
     }
+
     &__button {
       padding: 1.6rem;
     }

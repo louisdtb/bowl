@@ -3,12 +3,12 @@
   flex-direction: column;
   align-items: center;
 
-  background-color: #f3f7ed;
+  background-color: var(--green-25);
+  color: var(--green-900);
 
   grid-column: 1 / span 4;
 
   &__logo {
-    background-image: url("../../resources/bowl-logo.png");
     margin-top: 2.4rem;
     width: 12.5vw;
     max-width: 85%;
@@ -24,8 +24,10 @@
     font-family: "dm sans", sans-serif;
     position: relative;
   }
+
   &__item {
     margin-bottom: 2.4rem;
+
     & a {
       color: #000;
       text-decoration: none;
@@ -36,7 +38,7 @@
     display: flex;
     align-items: center;
 
-    & > * {
+    &>* {
       margin-right: 1.6rem;
     }
   }
@@ -69,7 +71,7 @@
     }
 
     &__link {
-      & > * {
+      &>* {
         margin-right: 4px;
       }
     }
