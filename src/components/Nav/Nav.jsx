@@ -1,11 +1,12 @@
 import React from "react";
 import "./Nav.scss";
 import { UilMapMarker, UilListUl, UilSearch } from "@iconscout/react-unicons";
+import { ReactComponent as BowlLogo } from "../../resources/bowl-logo.svg";
 
 const Nav = () => {
   return (
     <div className="nav">
-      <div className="nav__logo">&nbsp;</div>
+      <BowlLogo className="nav__logo"></BowlLogo>
       <ul className="nav__items">
         <li className="nav__item">
           <a href="#" className="nav__link">
