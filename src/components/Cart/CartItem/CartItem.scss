@@ -39,6 +39,7 @@
     width: 1.8rem;
     height: 1.8rem;
     background-color: var(--light-green);
+    cursor: pointer;
 
     display: flex;
     align-items: center;
@@ -49,9 +50,11 @@
     &__name {
       font-size: 2rem;
     }
+
     &__price {
       font-size: 1.8rem;
     }
+
     &__number {
       font-size: 1.8rem;
     }

@@ -2,7 +2,7 @@ import React, { useRef, useState, useLayoutEffect } from "react";
 import "./Cart.scss";
 import CartItem from "./CartItem/CartItem";
 import { useSelector } from "react-redux";
-import { ReactComponent as Bowl } from "../../resources/bowl.svg";
+import { ReactComponent as BowlImage } from "../../resources/bowl.svg";
 import Lottie from "react-lottie";
 import animationData from "../../resources/success-lottie.json";
 import { useDispatch } from "react-redux";
@@ -72,7 +72,7 @@ const Cart = () => {
     <>
       <input type="checkbox" className="cart__checkbox" id="cart-toggle" />
 
-      <label for="cart-toggle" className="cart__button">
+      <label htmlFor="cart-toggle" className="cart__button">
         {quantity !== 0 && (
           <span className="cart__button-number" ref={badgeRef}>
             {quantity}
@@ -92,7 +92,7 @@ const Cart = () => {
           <h2 className="heading-2 cart__heading">My order</h2>
           <div className="cart__items">
             {items.length !== 0 ? (
-              items.map((product) => (
+              items.map((product, index) => (
                 <>
                   <CartItem
                     item={{
@@ -102,14 +102,14 @@ const Cart = () => {
                       total: product.totalPrice,
                       price: product.price,
                     }}
-                    key={product.itemId}
+                    key={"cart_item-" + product.itemId}
                   />
                   <div></div>
                 </>
               ))
             ) : (
               <div className="cart__placeholder" ref={placeholderRef}>
-                <Bowl />
+                <BowlImage className="cart_image" />
                 Looks like your bowl is empty.
               </div>
             )}

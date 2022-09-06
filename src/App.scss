@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100vw;
   overflow: scroll;
-  background-image: linear-gradient(to left top, #7ca57b, #97c79e);
+  background-image: linear-gradient(to left top, var(--gradient-light), var(--gradient-dark));
 }
 
 .app {
@@ -14,6 +14,13 @@
 
   @media only screen and (max-width: 81.25em) {
     min-height: 0;
+  }
+
+  &_github-badge {
+    position: fixed;
+    bottom: 2.4rem;
+    right: 2.4rem;
+    z-index: 3;
   }
 }
 

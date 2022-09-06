@@ -3,12 +3,12 @@
   flex-direction: column;
   align-items: center;
 
-  background-color: #f3f7ed;
+  background-color: var(--light-green);
+  color: var(--green-900);
 
   grid-column: 1 / span 4;
 
   &__logo {
-    background-image: url("../../resources/bowl-logo.png");
     margin-top: 2.4rem;
     width: 12.5vw;
     max-width: 85%;
@@ -16,19 +16,31 @@
     background-repeat: no-repeat;
     background-origin: center;
     background-size: contain;
+
+    &--mobile {
+      display: none;
+    }
   }
 
   &__items {
-    margin-top: 6.4rem;
+    margin-top: 5.6rem;
     font-size: 2rem;
     font-family: "dm sans", sans-serif;
     position: relative;
   }
+
   &__item {
-    margin-bottom: 2.4rem;
+    padding: 16px 8px;
+    border-radius: 6px;
+    transition: all 0.1s ease-in-out;
+
     & a {
       color: #000;
       text-decoration: none;
+    }
+
+    &:hover {
+      background-color: rgba(#fff, 0.6);
     }
   }
 
@@ -36,7 +48,7 @@
     display: flex;
     align-items: center;
 
-    & > * {
+    &>* {
       margin-right: 1.6rem;
     }
   }
@@ -69,7 +81,7 @@
     }
 
     &__link {
-      & > * {
+      &>* {
         margin-right: 4px;
       }
     }
@@ -85,6 +97,10 @@
       flex-direction: column;
     }
 
+    &__items {
+      display: none;
+    }
+
     &__item {
       padding-top: 4px;
     }
@@ -93,13 +109,5 @@
       margin-right: 2rem;
     }
 
-    &__logo {
-      background-image: url("../../resources/bowl-logo--mobile.png");
-      width: 10vw;
-      min-width: 0;
-      height: 10vw;
-      min-height: 0;
-      margin-right: 2rem;
-    }
   }
 }
