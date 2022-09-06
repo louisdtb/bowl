@@ -103,7 +103,7 @@
     &::before {
       width: 3rem;
       height: 2px;
-      background-color: #000;
+      background-color: var(--green-900);
       display: inline-block;
       transition: all 0.2s;
     }
@@ -139,13 +139,11 @@
   &__checkbox:checked+&__button &__hamburger::before {
     top: 0;
     transform: rotate(135deg);
-    background-color: #fff;
   }
 
   &__checkbox:checked+&__button &__hamburger::after {
     top: 0;
     transform: rotate(-135deg);
-    background-color: #fff;
   }
 
   &__checkbox:checked+&__button &__button-number {
