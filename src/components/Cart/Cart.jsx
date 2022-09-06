@@ -72,7 +72,7 @@ const Cart = () => {
     <>
       <input type="checkbox" className="cart__checkbox" id="cart-toggle" />
 
-      <label for="cart-toggle" className="cart__button">
+      <label htmlFor="cart-toggle" className="cart__button">
         {quantity !== 0 && (
           <span className="cart__button-number" ref={badgeRef}>
             {quantity}
@@ -92,7 +92,7 @@ const Cart = () => {
           <h2 className="heading-2 cart__heading">My order</h2>
           <div className="cart__items">
             {items.length !== 0 ? (
-              items.map((product) => (
+              items.map((product, index) => (
                 <>
                   <CartItem
                     item={{
@@ -102,7 +102,7 @@ const Cart = () => {
                       total: product.totalPrice,
                       price: product.price,
                     }}
-                    key={product.itemId}
+                    key={"cart_item-" + product.itemId}
                   />
                   <div></div>
                 </>

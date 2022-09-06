@@ -8,10 +8,10 @@ const Menu = () => {
     <div className="menu">
       <h1 className="heading-1 menu__heading">Delicious Asian food to order</h1>
       <div className="menu__grid">
-        {DUMMY_DATA.map((item) => (
+        {DUMMY_DATA.map((item, index) => (
           <MenuItem
             id={item.id}
-            key={item.id}
+            key={"menu_grid-" + index}
             image={item.image}
             name={item.name}
             price={item.price}
