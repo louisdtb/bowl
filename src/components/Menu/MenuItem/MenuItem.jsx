@@ -1,5 +1,9 @@
 import React, { useState, useRef } from "react";
+
 import "./MenuItem.scss";
+
+import Spinner from "../../Spinner/Spinner";
+
 import { cartActions } from "../../../store/cart-slice";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
@@ -10,6 +14,9 @@ import { gsap } from "gsap";
 
 const MenuItem = (props) => {
   const [liked, setLiked] = useState(false);
+  const [isImageLoading, setIsImageLoading] = useState(true);
+
+  console.log(isImageLoading);
 
   const { name, price, id, desc, image } = props;
   const items = useSelector((state) => state.cart.items);
@@ -48,7 +55,17 @@ const MenuItem = (props) => {
 
   return (
     <div className="menu-item">
-      <img src={image} alt="" className="menu-item__img" />
+      <div className="menu-item_image-wrapper">
+        <div className={!isImageLoading && "d-none"}>
+          <Spinner></Spinner>
+        </div>
+        <img
+          src={image}
+          onLoad={() => setIsImageLoading(false)}
+          alt=""
+          className={isImageLoading ? "d-none" : "menu-item__img"}
+        />
+      </div>
       <div
         className="menu-item__save"
         onClick={() => {
