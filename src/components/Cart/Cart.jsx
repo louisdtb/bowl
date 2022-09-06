@@ -2,7 +2,7 @@ import React, { useRef, useState, useLayoutEffect } from "react";
 import "./Cart.scss";
 import CartItem from "./CartItem/CartItem";
 import { useSelector } from "react-redux";
-import { ReactComponent as Bowl } from "../../resources/bowl.svg";
+import { ReactComponent as BowlImage } from "../../resources/bowl.svg";
 import Lottie from "react-lottie";
 import animationData from "../../resources/success-lottie.json";
 import { useDispatch } from "react-redux";
@@ -109,7 +109,7 @@ const Cart = () => {
               ))
             ) : (
               <div className="cart__placeholder" ref={placeholderRef}>
-                <Bowl />
+                <BowlImage className="cart_image" />
                 Looks like your bowl is empty.
               </div>
             )}
