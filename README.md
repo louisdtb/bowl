@@ -9,27 +9,38 @@ Bowl is a React food menu. The idea was to design and build an interactive, enga
 
 This repo is for reference only.
 
+Live app: <a target='_blank' href='https://louisdtb.github.io/bowl-app/'>https://louisdtb.github.io/bowl-app/</a>
+
 ## Features
 
-- Redux cart
-- Lottie animations
-- CSS-only responsive popout cart
-- Background video
+- View menu items
+- Add menu items to cart (redux)
+- Cart calculates total cost
+- Favorite menu items
+- Address validation
+- Order success animation (lottie)
+- Micro interactions (gsap)
+- Video background
+- Image loading animations
+- Responsive on mobile, tablet, and large displays
 
 ## Todo
 
 List of things to fix or add
 
 - [x] Improve README.md
-- [ ] Add form validation
-- [ ] Optimize images with webp format
-- [ ] Optimize menu items
-- [ ] Add more animations
+- [ ] Host items on dynamic back-end
+- [ ] Improve page-load UI with loading state
+- [ ] Optimize images with webp format </br>
+<s>Add form validation</s> </br>
+<s>Optimize menu items</s> </br>
+<s>Add more animations</s> </br>
 
 ## Release History
 
 - 1.1.7
   - Configured and deployed to Github pages
+  - Updated readme and to-dos
 - 1.1.6
   - Added readme cover image
 - 1.1.5
