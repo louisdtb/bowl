@@ -1,15 +1,15 @@
 ## Background / Overview
 
-Bowl is a fictional food order menu designed and built in React by Louis de Tilly. The goal was to create a modern and well-designed digital menu prototype.
+Bowl is a React food menu. The idea was to create a modern, pretty menu.
 
-This repo is for showcasing purposes only.
+This repo is for reference only.
 
 ## Features
 
-- Redux cart management
-- Lottie order success animation
+- Redux cart
+- Lottie animations
 - CSS-only responsive popout cart
-- Background video on desktop
+- Background video
 
 ## Todo
 
