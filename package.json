@@ -1,6 +1,6 @@
 {
   "name": "bowl-app",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "private": false,
   "homepage": "https://louisdtb.github.io/bowl-app",
   "dependencies": {
@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^6.0.0",
     "gsap": "^3.9.1",
     "node-sass": "^7.0.1",
     "react": "^17.0.2",
@@ -19,6 +20,8 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
