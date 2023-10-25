@@ -1,6 +1,6 @@
 <div align='center'>
   <h1>Bowl</h1>
-  <img alt='bowl app display image' src='https://github.com/louisdtb/Bowl-app/blob/feature/cover-image/bowl-cover.png?raw=true'>
+  <img alt='bowl app display image' src='https://github.com/louisdtb/Bowl-app/blob/master/public/bowl-cover.png?raw=true'>
 </div>
 
 ## Background / Overview
@@ -28,6 +28,10 @@ List of things to fix or add
 
 ## Release History
 
+- 1.1.7
+  - Configured and deployed to Github pages
+- 1.1.6
+  - Added readme cover image
 - 1.1.5
   - Added image loading spinners
   - Created reusable color shade system
