@@ -1,3 +1,5 @@
+![bowl app display image](https://github.com/louisdtb/Bowl-app/blob/master/bowl-cover.png?raw=true)
+
 ## Background / Overview
 
 Bowl is a React food menu. The idea was to create a modern, pretty menu.
