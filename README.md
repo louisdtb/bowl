@@ -1,4 +1,4 @@
-![bowl app display image](https://github.com/louisdtb/Bowl-app/blob/master/bowl-cover.png?raw=true)
+![bowl app display image](https://github.com/louisdtb/Bowl-app/blob/master/bowl-image.png?raw=true)
 
 ## Background / Overview
 
