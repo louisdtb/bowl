@@ -1,4 +1,5 @@
 <div align='center'>
+  <h1>Bowl</h1>
   <img alt='bowl app display image' src='https://github.com/louisdtb/Bowl-app/blob/feature/cover-image/bowl-cover.png?raw=true'>
 </div>
 
