@@ -1,4 +1,6 @@
-![bowl app display image](https://github.com/louisdtb/Bowl-app/blob/feature/cover-image/bowl-cover.png?raw=true)
+<div align='center'>
+  <img alt='bowl app display image' src='https://github.com/louisdtb/Bowl-app/blob/feature/cover-image/bowl-cover.png?raw=true'>
+</div>
 
 ## Background / Overview
 
