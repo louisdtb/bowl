@@ -5,7 +5,7 @@
 
 ## Background / Overview
 
-Bowl is a React food menu. The idea was to create a modern, pretty menu.
+Bowl is a React food menu. The idea was to design and build an interactive, engaging menu in a weekend.
 
 This repo is for reference only.
 
