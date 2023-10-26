@@ -1,6 +1,6 @@
 <div align='center'>
   <h1>Bowl</h1>
-  <img alt='bowl app display image' src='https://github.com/louisdtb/Bowl-app/blob/master/public/bowl-cover.png?raw=true'>
+  <img alt='bowl app display image' src='https://github.com/louisdtb/Bowl/blob/master/public/bowl-cover.png?raw=true'>
 </div>
 
 ## Background / Overview
@@ -9,7 +9,7 @@ Bowl is a React food menu. The idea was to design and build an interactive, enga
 
 This repo is for reference only.
 
-Live app: <a target='_blank' href='https://louisdtb.github.io/bowl-app/'>https://louisdtb.github.io/bowl-app/</a>
+Live app: <a target='_blank' href='https://louisdtb.github.io/bowl/'>https://louisdtb.github.io/bowl-app/</a>
 
 ## Features
 
@@ -32,9 +32,9 @@ List of things to fix or add
 - [ ] Host items on dynamic back-end
 - [ ] Improve page-load UI with loading state
 - [ ] Optimize images with webp format </br>
-<s>Add form validation</s> </br>
-<s>Optimize menu items</s> </br>
-<s>Add more animations</s> </br>
+      <s>Add form validation</s> </br>
+      <s>Optimize menu items</s> </br>
+      <s>Add more animations</s> </br>
 
 ## Release History
 

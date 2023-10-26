@@ -2,7 +2,7 @@
   "name": "bowl-app",
   "version": "1.1.7",
   "private": false,
-  "homepage": "https://louisdtb.github.io/bowl-app",
+  "homepage": "https://louisdtb.github.io/bowl",
   "dependencies": {
     "@iconscout/react-unicons": "^1.1.6",
     "@reduxjs/toolkit": "^1.7.1",
