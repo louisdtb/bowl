@@ -1,6 +1,6 @@
 <div align='center'>
   <h1>Bowl</h1>
-  <img alt='bowl app display image' src='https://github.com/louisdtb/Bowl/blob/master/public/bowl-cover.png?raw=true'>
+  <img alt='bowl app display image' src='https://github.com/louisdtb/bowl/blob/master/public/bowl-cover.png?raw=true'>
 </div>
 
 ## Background / Overview
@@ -9,7 +9,7 @@ Bowl is a React food menu. The idea was to design and build an interactive, enga
 
 This repo is for reference only.
 
-Live app: <a target='_blank' href='https://louisdtb.github.io/bowl/'>https://louisdtb.github.io/bowl-app/</a>
+Live app: <a target='_blank' href='https://louisdtb.github.io/bowl/'>https://louisdtb.github.io/bowl/</a>
 
 ## Features
 
